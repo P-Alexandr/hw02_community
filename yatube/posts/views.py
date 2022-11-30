@@ -1,7 +1,9 @@
 from django.shortcuts import render, get_object_or_404
-#from django.http import HttpResponse
-#from django.template import loader   #Импортируем загрузчик.
-from .models import Group, Post       # для финального
+# from django.http import HttpResponse
+# Импортируем загрузчик.
+# from django.template import loader
+# для финального
+from .models import Group, Post
 # Create your views here.
 
 
@@ -25,20 +27,19 @@ def group_posts(request, slug):
         'posts': posts,
     }
     return render(request, 'posts/group_list.html', context)
-''' до вывода инф из БД
+# до вывода инф из БД
 # Главная страница
-def index(request):
-    template = 'posts/index.html'
-    title = 'Это главная страница проекта Yatube'
-    context = {
-        'title': title,
-    }  
-    return render(request, template, context) 
-
-def group_posts(request, slug):
-    template = 'posts/group_list.html'
-    title = 'Здесь будет информация о группах проекта Yatube'
-    context = {
-        'title': title,
-    }
-    return render(request, template, context)  '''
+# def index(request):
+#    template = 'posts/index.html'
+#    title = 'Это главная страница проекта Yatube'
+#    context = {
+#        'title': title,
+#    }
+#    return render(request, template, context)
+# def group_posts(request, slug):
+#    template = 'posts/group_list.html'
+#    title = 'Здесь будет информация о группах проекта Yatube'
+#    context = {
+#        'title': title,
+#    }
+#    return render(request, template, context)

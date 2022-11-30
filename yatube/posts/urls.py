@@ -12,5 +12,4 @@ urlpatterns = [
         views.group_posts,
         name = 'group_list'
     ),
-
-] 
+]

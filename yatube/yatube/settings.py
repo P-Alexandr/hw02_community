@@ -53,6 +53,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'yatube.urls'
 
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')   # Путь к директории с шаблонами вынесен в переменную:
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
