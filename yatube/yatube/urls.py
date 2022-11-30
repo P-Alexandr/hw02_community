@@ -20,7 +20,7 @@ urlpatterns = [
     path(
         '',
         include('posts.urls',
-        namespace='posts')
+                namespace='posts')
     ),
     path('admin/', admin.site.urls),
 ]
