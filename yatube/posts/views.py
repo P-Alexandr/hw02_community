@@ -3,7 +3,7 @@ from .models import Group, Post
 
 
 def index(request):
-    posts = Post.objects.order_by()[:10]
+    posts = Post.objects.all()
     context = {
         'posts': posts,
     }

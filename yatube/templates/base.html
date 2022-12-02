@@ -12,29 +12,27 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-    {%block title %}
-      <title>
-        {{ title }}
-      </title>
-    {% endblock %}
+    <title>
+      {%block title %}
+        Тут должен быть заголовок              
+      {% endblock %}
+    </title>  
   </head>
-
   <body>
     <header>
       {% include 'includes/header.html' %}   
     </header>
     <main>
-      {% block content %}
-        Тут должен быть контент
         <div class="container py-5">
           <h1>{{ title }}</h1>
           <br>   
         </div>
+      {% block content %}
+        Тут должен быть контент
       {% endblock %}  
     </main>        
     <footer class="border-top text-center py-3">
       {% include 'includes/footer.html' %}     
     </footer>
   </body>
-  
 </html>
